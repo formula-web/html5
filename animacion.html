@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel='stylesheet' href='./css/animacion.css'/>
+</head>
+<body>
+
+    <!--seccion PELICULA CON SPRITE (coleccion fotogramas en una imagen)------------------------------------->
+    <section>
+        <H1>animacion de Sprite con CSS</H1> 
+        <div class="pelicula">
+            <div class="fotograma">
+
+            </div>
+
+        </div>
+    
+    </section>
+    <!--seccion MOVIMIENTO ------------------------------------------------------------------>
+    <section>
+        <H1 class="movimiento">Movimiento continuo simple con CSS</H1>
+        <div>
+            <p>.movimiento {</p>
+            <p>&nbsp; animation-name: mueve;</p>    
+            <p>&nbsp;  animation-duration: 3s;</p>    
+            <p>&nbsp;  animation-iteration-count: infinite;</p>    
+            <p>}</p>
+            <p>@keyframes mueve {</p>
+            <p>&nbsp;  from { margin-left:500px};</p>    
+            <p>&nbsp;  to { margin-left:1000px};</p>    
+            <p>}</p>
+            </p>
+        </div>
+        
+
+    </section>
+    <!------------------------------------------------------------------------------------------>
+    <section>
+        <h1>Animaciones CSS</h1>
+        <div id="fila1">
+            <div id="div1" class="card ripplein">
+                    ripplein
+            </div>
+            <div id="div2" class="card rotatein">
+                    rotatein
+            </div>
+        </div>
+    
+    </section>
+    <!---------------------------------------------------------------------------------->
+    <section>
+        <h1>Efectos</h1>
+        <div id="contenedorefectos">
+            <div id="blur">
+                <p>Texto de contenido</p>
+                <p>contenedor con blur on hover</p>
+                <p>filter:blur(1px)</p>
+            </div>
+
+            <div id="div2">
+                <p>Texto de contenido</p>
+                <p>contenedor con otro texto</p>
+                <p></p>
+            </div>
+
+
+        </div>
+    </section>
+
+    
+</body>
+</html>

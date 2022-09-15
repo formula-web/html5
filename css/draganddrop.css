@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&display=swap");
+:root {
+  --colorfondo: rgb(201, 201, 201);
+  --colortexto1: rgb(82, 81, 81);
+  --colorbotones:rgb(184, 87, 32);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --colorfondo: rgb(59, 56, 56);
+    --colortexto1: rgb(226, 226, 226);
+    --colorbotones:rgb(212, 155, 205);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --colorfondo: rgb(201, 201, 201);
+    --colortexto1: rgb(82, 81, 81);
+    --colorbotones:rgb(184, 87, 32);
+  }
+}
+
+body {
+  text-align: center;
+}
+
+#secciondrag ul {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 120px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+#secciondrag ul .card {
+  display: block;
+  list-style-type: none;
+  background: #dfdfdf;
+  margin-top: 20px;
+  width: 40vw;
+  height: 5vh;
+  padding: 5px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 5px 5px gray;
+          box-shadow: 0 0 5px 5px gray;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#secciondrag ul .card.dragging {
+  position: fixed;
+  margin: 0 auto;
+}
+
+#secciondrag ul .card.destinodrag {
+  background-color: brown;
+}

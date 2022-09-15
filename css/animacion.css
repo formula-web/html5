@@ -1,0 +1,191 @@
+div.pelicula .fotograma {
+  width: 200px;
+  height: 260px;
+  background-image: url("../img/perros.png");
+  background-position: 0% 0%;
+  -webkit-animation-name: moverfotogramas;
+          animation-name: moverfotogramas;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps(5);
+          animation-timing-function: steps(5);
+}
+
+@-webkit-keyframes moverfotogramas {
+  from {
+    background-position: 0%  0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes moverfotogramas {
+  from {
+    background-position: 0%  0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+.movimiento {
+  -webkit-animation-name: mueve;
+          animation-name: mueve;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes mueve {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 500px;
+  }
+}
+
+@keyframes mueve {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 500px;
+  }
+}
+
+#fila1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+}
+
+.ripplein, .rippleout {
+  -webkit-animation: rippleIn 10000ms;
+          animation: rippleIn 10000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rippleout {
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes rippleIn {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+  10% {
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    border-radius: inherit;
+  }
+}
+
+@keyframes rippleIn {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    border-radius: 50%;
+    opacity: 0.1;
+  }
+  10% {
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    border-radius: inherit;
+  }
+}
+
+.rotatein {
+  -webkit-animation: rotateIn 10000ms;
+          animation: rotateIn 10000ms;
+}
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+#contenedorefectos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+}
+
+#contenedorefectos #blur:hover {
+  color: red;
+  font-weight: bold;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+#contenedorefectos #div2 {
+  color: blueviolet;
+}
+
+#contenedorefectos #div2:hover {
+  font-weight: bold;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}

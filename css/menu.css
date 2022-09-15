@@ -1,0 +1,18 @@
+#seccionmenu {
+  width: 100%;
+  padding: 5px;
+  background-color: #746767;
+  color: white;
+}
+
+#seccionmenu li {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.menusticky {
+  position: fixed;
+  top: 0px;
+}

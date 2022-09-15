@@ -1,0 +1,29 @@
+nav#menu {
+  max-width: 30em;
+}
+
+#iconomenu {
+  font-weight: bold;
+  text-shadow: 0x 0x 5x #7a7777;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#seccionmenu {
+  width: 100%;
+  padding: 5px;
+  background-color: #746767;
+  color: white;
+}
+
+#seccionmenu li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.menusticky {
+  position: fixed;
+  top: 0px;
+}

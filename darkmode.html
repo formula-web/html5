@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/darkmode.css"/>
+    <script src='./js/darkmode.js'></script>
+</head>
+<body>
+    <div id="form1topcontainer">
+        <div id='col1'>
+            <h2>Dark Mode. Formulario.</h2>
+            <div id="controles">
+                <span class="sol">&#x2600</span>
+                <input type='checkbox' class='botontoggle' id='botontoggle'>
+                <label for='botontoggle'></label>
+                <span class="luna">&#x263d;</span>
+            </div>
+            <form id='form1'>
+                <label for="text1">Número</label>
+                <input id='text1' type='text' title='Numero 12 a 15 digitos' pattern="[0-9]{12,15}" autofocus>
+                <span></span><br>
+                <label for="fecha1">Fecha 1</label>
+                <input id='fecha1' type='date' min="2000-01-01" max="2040-03-01" placeholder="dd/mm/aaa" ><br>
+                <input type='datetime-local' min="2000-01-01" max="2040-03-01"><br>
+                <input type='range' max='100' min='0' step="5" value="10"> 
+                <span id="valorrango"></span><br>
+                <input type='number' min='20' max='1000' step='10'><br>
+                <input type='number' min='20' max='10000' step='100'><br>    
+                <input type='number' min='20' max='100000' step='1000'><br>  
+                <label for="email">Email</label><input type="email"/>
+                <label for="password">Password</label><input id="password" type="password">
+                <br>
+
+                <br><br>
+                <input type='submit' value='SUBMIT'> 
+            </form>
+        </div>
+
+
+</body>
+</html>

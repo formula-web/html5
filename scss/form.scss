@@ -1,0 +1,81 @@
+#form1topcontainer{
+    display:flex;
+    justify-content: space-around;
+
+}
+
+#col1, #col2, #col3 {
+    padding: 15px;
+}
+
+
+//--- Estilo General del Formulario 
+#form1 {
+    input {
+        display: block;
+    }
+
+}
+//--------- SELECTOR ARCHIVOS/FOTOS ----------------
+#form1 {
+
+
+}
+#inputfotos {
+    display:none;
+}
+label[for='inputfotos'] {
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    border-radius: 5%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+#fotocargada {
+    width: 20vw;
+    min-width: 200px;
+    height: 20vw;
+    min-height: 200px;
+    padding: 20px;
+    border: solid 1px gray;
+    position:relative;
+    background-size: cover;
+    border-radius: 20%;
+}
+
+
+
+
+// ---- Estilo SLIDEBAR ( INPUT type='range')  --------------
+input[type='range'] {
+    appearance: none;
+    background-color: rgb(219, 152, 152);
+    height: 6px;
+    border-radius: 8px;
+}
+[type='range']::-webkit-slider-thumb {
+    appearance: none;
+    background-color: #00e676;
+    height: 10px;
+    width: 10px;
+}
+//--- efecto colores verde y rojo segun estado validacion del campo
+input#text1:valid {
+    background-color: #b4e7ce;
+}
+input:invalid { 
+    background-color: rgb(196, 116, 130);
+}
+//--- efecto Check o Texto segun estado validacion del campo
+input#text1:valid + span:after {
+    content: 'Ok';
+    color:#00e676;
+}
+input#text1:invalid + span:after {
+    content: 'Error';
+}
+
+

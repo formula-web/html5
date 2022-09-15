@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/form.js" ></script>
+    <script src="./js/ajax.js" ></script>
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Formulario</title>
+</head>
+    <!-- FORMULARIO 1-------------------------------------------------------------------------->
+    <div id="form1topcontainer">
+        <div id='col1'>
+            <h2>div izda</h2>
+            <form id='form1'>
+                <input id='text1' type='text' title='Numero 12 a 15 digitos' pattern="[0-9]{12,15}" autofocus>
+                <span></span><br>
+                <input type='date' min="2000-01-01" max="2040-03-01" placeholder="dd/mm/aaa" ><br>
+                <input type='datetime-local' min="2000-01-01" max="2040-03-01"><br>
+                <input type='range' max='100' min='0' step="5" value="10"> 
+                <span id="valorrango"></span><br>
+                <input type='number' min='20' max='1000' step='10'><br>
+                <input type='number' min='20' max='10000' step='100'><br>    
+                <input type='number' min='20' max='100000' step='1000'><br>  
+                
+                <br>
+
+                <br><br>
+                <input type='submit' value='SUBMIT'> 
+            </form>
+        </div>
+        <div id='col2'>
+            <h2>div dcha</h2>
+            <div id='fotocargada'>
+                ..Foto Cargada..
+                <label for='inputfotos'>Cargar Foto</label>  <input type='file' id='inputfotos'>
+            </div>
+
+        </div>
+         <!-- FORMULARIO 2 CON INPUT AUTOCOMPLETADO POR AJAX ------------------->
+        <div id='col3'>
+            <h1>FORM2 CON INPUT AUTOCOMPLETADO POR AJAX</h1>
+            <form id='form2'>
+                <label for='autocompletado1'>Autocompletado: </label>
+                <input id='autocompletado1' list="midatalist" type='text'>
+                <!-- aqui va el <datalist> creado desde form.js --------->
+            </form>
+            <button id='botonleer'>Leer Página</button>
+        </div>
+    </div>
+    
+</body>
+</html>

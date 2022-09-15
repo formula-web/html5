@@ -1,0 +1,20 @@
+canvas {
+    border: 2px solid gray;
+}
+#container {
+    display:flex;
+    justify-content: center;
+}
+
+#div1 {
+    border: 1px solid #ddd;
+    margin: 0 auto;
+}
+#div2 {
+    border: 1px solid rgb(230, 69, 69);
+    margin: 0 auto;
+}
+
+#video-camara {
+    border: 3px solid rgb(17, 8, 139);
+}

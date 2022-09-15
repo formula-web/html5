@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliders</title>
+    <link rel='stylesheet' href='../css/slider.css'></link>
+    <script src='./js/sliderDOM.js' type='module'></script>
+
+</head>
+<body>
+    <!-- SLIDER Tecnica 1-------------------------------------------------------------------------------------------------->
+    <!-- Array de diapositivas en diapositivas.JS, se usa innerHTML para presentar una unica diapositiva en cada momento -->
+    <!-- se actualiza el innerHTML del div donde se visualiza la diapositiva -->
+    <section id="seccion1">
+        Aqui empieza la Seccion 1
+        <div class="area-grid slider">
+            <!-- COLUMNA IZDA: CONTROLES SLIDER -->
+            <div class='columna-texto'>
+                <div class='controles'> 
+                    <img src="icons/FlechaDerecha.svg" alt="Flecha a la derecha" class="flecha-derecha">
+                    <img src="icons/FlechaIzquierda.svg" alt="Flecha a la izquierda" class="flecha-izquierda">
+                </div>
+                <div id='slider-text-content'>
+                    <button id='botonstart'>START</button>
+                    <button id='botonir' onclick="location.href='./html/hola.html'">HOLA</button>
+                    <h1 id='slider-title'>H1 del header</h1>
+                    <h2 id='slider-subtitle'>H2 del header</h2>
+                    <p id='slider-text'>Lorem ipsum fsdafasdfs sadfasdfsadfdfsa fsdf fsdfsdfsadfsdfsdf asf sadf sdf safs fsdfsdf saf sfsadf asdfsaf safdasdf</p>
+                </div>
+            </div>
+            <!-- COLUMNA DERECHA  DIAPOSITIVA -->
+            <div class='columna-imagen'>
+                      <div id='slider-image'>
+                        <img src="img/farmhouse-dining-room-design.jpeg" />
+                    </div>
+            </div>
+
+        <div>
+    </section>
+    <!-- SLIDER Tecnica 2 --------------------------------------------------------------------------------------->
+    <!-- Todas las dispositivas estan en el HTML, se pintan en fila ( white-space: nowrap y overflow:hidden ) -->
+    <!-- se hace un position:absolute y left=-100%, -200% ... en el contenedor para visualizar solo una imagen de la fila -->
+    <section id="seccion2">
+        Aqui empieza la Seccion 2 
+        <div id="slider2" class="slider">
+            <div class='container'>
+                <img src='./img/farmhouse-dining-room-design.jpeg'>
+                <img src='./img/coche.jpg'>
+                <img src='./img/glc.jpg'>
+                <img src='./img/hielo.jpg'>
+            </div>
+        <div>
+        <div id="controles">
+        </div>
+        Aqui termina la Seccion 2
+    </section>
+
+    <!--  SECCION 3 PRUEBAS ------------------------------------------------------------------>
+    <section id="seccion3">
+        <h1>Seccion 3</h1>
+        <div class='area-grid'>
+            <div class='columna-texto'>
+                <div class='controles'> 
+                    <img src="icons/FlechaDerecha.svg" alt="Flecha a la derecha" class="flecha-derecha">
+                    <img src="icons/FlechaIzquierda.svg" alt="Flecha a la izquierda" class="flecha-izquierda">
+                </div>
+            </div>
+            <div class='columna-imagen'>
+                <img src='./img/farmhouse-dining-room-design.jpeg'>
+                <img src='./img/coche.jpg'>
+                <img src='./img/glc.jpg'>
+                <img src='./img/hielo.jpg'>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import './variables';
+@import './_mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+
+// --- Normalizar estilos del navegador
+html, body, h1 {
+    margin: 0px;   // suprimir bordes por defecto de los navegadores
+}
+
+
+//------  Aplicar efecto HERO al DIV: añade imagen de background, texto alineado en la base y con sombreado del texto
+.hero {
+    min-height: 60vh;
+    width: 100vw;
+    background:  url('../img/hielo.png') ,rgb(231, 31, 31);
+    background-size: cover;
+    background-position: center;
+
+
+    color: black;
+    text-shadow: 0px 0px 4px rgb(240, 232, 232); //sombra para resaltar textp
+    p { display: block;}
+}
+
+//-----  Contenedor Principal pensado para menu lateral
+#topcontainer {
+    width: 100%;
+    white-space: nowrap; //poder sobrepasar el ancho de pantalla puntualmente
+    //* { white-space: normal;} //no se aplique en los hijos
+ 
+}
+#containermenulateral, #containercontent {
+     display: inline-block;
+     vertical-align: top;
+     padding: 0px;
+     margin: 0px;
+     margin-left:-2px;
+     transition: all 0.6s ease-out;
+     overflow-x: hidden;
+ }

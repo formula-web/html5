@@ -1,0 +1,44 @@
+@import './variables';
+@import './_mixins';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+
+body {
+    text-align: center;
+}
+
+#secciondrag {
+    ul{ // lista
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 120px;
+        display: inline-block;   //centrar los li
+        background-color:      $blanco;
+        //position: relative;
+        .card { // item
+            //margin: 0 auto;    // otra forma de centrar los li
+            display: block;
+            //vertical-align:baseline;
+            list-style-type: none;
+            background: $fondonormal;
+            margin-top: 20px;
+            width: 40vw;
+            height: 5vh;
+            padding: 5px;
+            border-radius: 2px;
+            box-shadow: 0 0 5px 5px gray;
+            font-size: 2em; font-weight: bold;
+            cursor: pointer;
+            //position:absolute;
+            &.dragging { // item mientras es arrastrado
+                position: fixed;
+                margin: 0 auto;
+            }
+            &.destinodrag {
+                background-color: brown;
+            }
+
+        }
+    }
+
+
+}

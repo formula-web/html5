@@ -1,0 +1,26 @@
+canvas {
+  border: 2px solid gray;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#div1 {
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+#div2 {
+  border: 1px solid #e64545;
+  margin: 0 auto;
+}
+
+#video-camara {
+  border: 3px solid #11088b;
+}

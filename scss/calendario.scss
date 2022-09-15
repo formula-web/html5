@@ -1,0 +1,27 @@
+#calendario {
+    font-family: Roboto, Arial;
+    display:inline-block;   // acorta el tamaño al contenido 
+    overflow: hidden;        // para que la tabla no se salga de los bordes redondeados
+    background-color: rgb(247, 240, 240);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px gray rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+
+    header {
+        background-color: rgb(90, 15, 15);
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+    }
+    table {
+        text-align: center;
+    }
+    tr td { 
+        border: solid 1px rgb(231, 230, 230);
+    }
+    td.diaseleccionado {
+        background-color: pink;
+
+    }
+
+}
+

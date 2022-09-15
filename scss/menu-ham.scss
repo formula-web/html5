@@ -1,0 +1,25 @@
+nav#menu {
+    max-width: 30em;
+}
+#iconomenu { font-weight: bold; text-shadow: 0x 0x 5x rgb(122, 119, 119); font-size: 2em; cursor:pointer}
+
+#seccionmenu {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(116, 103, 103);
+    color: white;
+    
+    li {
+        list-style-type: none;  //quitar viñetas
+        font-size: 1.5rem;
+        //display: inline-block;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+//--- MENU Fijado arriba -----------------//
+.menusticky {
+    position: fixed;
+    top: 0px;
+}

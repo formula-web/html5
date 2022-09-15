@@ -1,0 +1,76 @@
+#form1topcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#col1, #col2, #col3 {
+  padding: 15px;
+}
+
+#form1 input {
+  display: block;
+}
+
+#inputfotos {
+  display: none;
+}
+
+label[for='inputfotos'] {
+  background-color: brown;
+  color: white;
+  padding: 5px;
+  border-radius: 5%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+#fotocargada {
+  width: 20vw;
+  min-width: 200px;
+  height: 20vw;
+  min-height: 200px;
+  padding: 20px;
+  border: solid 1px gray;
+  position: relative;
+  background-size: cover;
+  border-radius: 20%;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #db9898;
+  height: 6px;
+  border-radius: 8px;
+}
+
+[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  background-color: #00e676;
+  height: 10px;
+  width: 10px;
+}
+
+input#text1:valid {
+  background-color: #b4e7ce;
+}
+
+input:invalid {
+  background-color: #c47482;
+}
+
+input#text1:valid + span:after {
+  content: 'Ok';
+  color: #00e676;
+}
+
+input#text1:invalid + span:after {
+  content: 'Error';
+}

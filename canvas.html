@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script src="./js/canvas.js"></script>
+    <link rel="stylesheet" href='./css/canvas.css'>
+</head>
+<body>
+    <div>
+        <button id="botonborrar">BORRAR</button>
+        <button id="botonBN">Blanco y Negro</button>
+        <button id="botoncamara">Camara a Canvas 3</button>
+        <button id="botonfotograma">Fotograma a Canvas 3</button>
+
+    </div>
+    <div id="container">
+        <div id="div1">
+            <h2>CANVAS 1</h2>
+            <canvas id="canvas">  </canvas>
+        </div>
+        <div id="div2">
+            <h2>CANVAS 2</h2>
+            <canvas id="canvas2">  </canvas>
+        </div>
+    </div>
+    <div id="div3">
+        <h2>CANVAS3</h2>
+        <canvas id="canvas3"></canvas>
+    </div>
+    <!-- Video oculto para meter en el canvas3------------------>
+    <video id='video-camara' controls style="display: block;">
+        <!-- streaming de la camara metido desde canvas.js -->
+    </video>
+
+  
+
+</body>
+</html>

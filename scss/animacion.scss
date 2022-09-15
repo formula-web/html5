@@ -1,0 +1,119 @@
+// ANIMACION PELICULA CON SPRITE ....................
+div.pelicula {
+    .fotograma {
+        width: 200px;
+        height: 260px;
+        background-image: url('../img/perros.png'); // sprite con los fotogramas
+        //background-size: 100%;
+        background-position: 0% 0%;
+
+        animation-name: moverfotogramas;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(5);
+    }
+    @keyframes moverfotogramas {
+        from { background-position: 0%  0% };
+        to   { background-position: 100% 0% };
+    }
+    
+
+}
+
+
+
+// ANIMACION movimiento .........................
+.movimiento {
+    animation-name: mueve;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes mueve {
+    from { margin-left:0px};
+    to { margin-left:500px};
+
+}
+
+
+
+
+//-----------------------------------------------------------
+#fila1{
+    display:flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+
+.ripplein, .rippleout {
+    animation: rippleIn 10000ms;
+    animation-fill-mode: forwards;  //dejar estado final animacion
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.rippleout {
+    animation-direction: reverse;
+}
+@keyframes rippleIn {
+    0% {    //fotograma 1
+        transform: scale(0.2);
+        border-radius: 50%;
+        opacity: 0.1;
+    }
+    10% {  //fotograma 2
+        border-radius: 50%;
+    }
+    100% { //fotograma 3
+        transform: scale(1);
+        opacity: 1;
+        border-radius: inherit;
+    }
+    
+}
+.rotatein {
+    animation: rotateIn 10000ms;
+}
+
+
+@keyframes rotateIn {
+    0% {    //fotograma 1
+        transform: scale(0.2);
+        transform: rotateY(180deg);
+        opacity: 0.2;
+    }
+    100% { //fotograma 2
+        transform: scale(1);
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+    
+}
+
+// SECTION EFECTOS -------------------------
+#contenedorefectos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+
+
+    #blur {
+        &:hover {
+            color:red;
+            font-weight: bold;
+            filter: blur(1px);
+        }
+    }
+
+    #div2 {
+        color: blueviolet;
+        &:hover {
+            font-weight: bold;
+            filter: blur(1px);
+            transform: scale(1.10);
+            transition: all 1.5s ease-in;
+        }
+    }
+}

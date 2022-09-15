@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href='./css/media.css'>
+    <script src="./js/media.js"></script>
+</head>
+<body>
+    <!-- CANVAS PARA METER fotos/video y DIBUJAR SOBRE ELLAS-->
+    <h1>CANVAS con foto o video dentro</h1>
+    <canvas id="canvas1"></canvas>    
+
+    <!-- VIDEO DESDE CAMARA -------------------------------------------->
+    <h1> Objeto Media Streams del Dispositivo. Version 2</h1>
+    <video id='video-camara' controls>
+        <!-- El video se coge de la camara del PC en media.js -->
+    </video>
+
+    <!-- SELECT Y VIDEO 2 desde dispositivo seleccionao ---------------->
+    <div>
+        <!-- Select con lista de dispositivos media ----->
+        <div>
+            <select id='selector-devices'></select>
+            <label>Elemento Seleccionado:</label><span id="cual"></span>
+        </div>
+        <!-- Video 2 cogido del select-->
+        <div>
+            <video id='video2' controls >
+        </div>
+    </div>
+
+    </video>
+</body>

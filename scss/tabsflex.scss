@@ -1,0 +1,82 @@
+.card {
+    width:80vw;
+    margin: 0 auto; //centrar
+    padding: 1%;
+    background-color: rgb(223, 222, 222);
+    border-radius: 2%;
+    box-shadow: 0 2px 25px 0 rgba(3, 3, 3, 0.16), 0 2px 10px 0 rgba(8, 8, 8, 0.712);
+    //box-shadow: 0px 2px 25px 0 rgba(219, 4, 4, 0.712);
+
+
+}
+
+
+#tabstopcontainer {  //.tabs-container  .cards
+
+
+}
+
+#tabscontrol {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+
+    a {  // Esto es la pestaña del TAB
+        flex-grow: 1;  // Ocupe toda la anchura.
+        text-decoration: none;
+        cursor: pointer;
+        padding: 8px;
+        color:#999;
+        background-color: whitesmoke;
+        border: solid 1px rgb(66, 62, 62);
+        text-align: center;
+        box-sizing: border-box;  // no cambiar tamaño al cambiar el borde
+        //border-bottom: solid 5px transparent;
+        //transition: all 1s;
+        &:visited {
+            color: inherit;
+        }
+        &:active {
+            color: red;
+        }
+        &.seleccionado {
+            border-bottom: solid 5px red;
+        } 
+        
+    }
+}
+
+
+#tabslevel2container {   //.tabs container intermedio
+
+}
+
+#tabslevel3container {  //.container  as cercano. Se fuerza a que los tabs hijos se coloquen en fila sin salto de linea.
+    white-space: nowrap;
+    overflow: hidden;
+    * {   // los tabs hijos si deben hacer cambios de linea al llegar al ancho
+        white-space: normal; 
+    }
+}
+.tab {  // contenido
+    display: inline-block;     // Colocar todos los tabs en fila, para asi hacerlos desaparecer y que se muestre solo 1.
+    width: 100%;               // ocupa todo el ancho y asi empuja a los otros tabs hacia la derecha fuera del container.
+    vertical-align: top;
+
+}
+
+// ******************* GRID *********************************************************************
+#contenedorgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+
+    .tarjeta {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}

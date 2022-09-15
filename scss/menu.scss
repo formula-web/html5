@@ -1,0 +1,19 @@
+#seccionmenu {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(116, 103, 103);
+    color: white;
+    
+    li {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+//--- MENU Fijado arriba -----------------//
+.menusticky {
+    position: fixed;
+    top: 0px;
+}

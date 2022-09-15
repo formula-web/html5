@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+html, body, h1 {
+  margin: 0px;
+}
+
+#div1 {
+  padding: 2px;
+  border: 1px solid black;
+  width: 40vw;
+  margin-left: 20vw;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#lista3 {
+  list-style-type: decimal;
+  list-style-type: 10;
+}
+
+#lista1 {
+  list-style-type: none;
+  position: relative;
+}
+
+#lista1 li {
+  padding-left: 1.6em;
+}
+
+#lista1 li::before {
+  content: "✔️";
+  position: absolute;
+  width: 0.25em;
+  height: 0.25em;
+  left: 0.3em;
+  margin-top: -0.1em;
+}
+
+#lista2 {
+  list-style-type: none;
+  position: relative;
+}
+
+#lista2 li {
+  padding-left: 1.6em;
+}
+
+#lista2 li::before {
+  content: "\e8cc";
+  font-family: Material Icons;
+  color: red;
+  position: absolute;
+  width: 0.25em;
+  height: 0.25em;
+  left: 0.3em;
+  margin-top: -0.1em;
+}

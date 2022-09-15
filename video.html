@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/video.css" />
+    <script src="./js/video.js" ></script>
+</head>
+<body>
+    <section id="#videos">
+
+
+
+        <h1>Aquí van dos videos</h1>
+        <div id="controles">
+            <button id="botonplay">Play</button>
+            <button id="botonpause">Pausar</button>
+            <button id="botonstop">Stop</button>
+            <button id="botonrr"> << </button>
+            <button id="botonff"> >> </button>
+            <button id="botonPC"> Pantalla Completa </button>
+            <button id="boton2x" data-velocidad="2.0"> 2x </button>
+            
+        </div>
+
+        <!-- Especificar video con formato alternativo para el caso de formato no soportado en el dispositivo-->
+        <div id="divvideo1">
+            <video class="video1" loop controls muted>
+                <source src="PabloPremioBasket.mp4"  type="video/mp4" ></source>
+                <source src="25dic16.mp4" type="video/mp4"></source>
+                Tu navegador no soporta la etiqueta video
+        
+            </video>
+        </div>
+
+    
+        
+        <video class="video2" src="25dic16.mp4" height="400px" muted controls></video>
+        <video class="video3" src="s60.mp4" height="400px"  controls muted></video>
+        <p>Fin del Video</p>
+
+        <!-- VIDEO QUE HACE PLAY CUANDO ES VISIBLE EN PANTALLA Y PAUSE CUANDO NO -->
+        <div id="divvideo3">
+            <video id="videoplay" src="25dic16.mp4" height="400px" muted controls></video>
+        </div>
+
+
+
+
+    </section>
+</body>
+</html>
